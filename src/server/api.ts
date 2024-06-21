@@ -9,8 +9,6 @@ export const getHomeData = async () => {
 };
 
 export const getPost = async (id: string) => {
-  const data: any = database.find(
-    (el: DataType): DataType => (el.id === id ? el : el)
-  );
+  const data: any = database.find((el: DataType): any => el.id === id);
   return data;
 };

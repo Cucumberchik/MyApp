@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  
 };
 
 export default function RootLayout({
@@ -23,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <meta name="google-site-verification" content="JCtVCTSuhUP04cYbUxNvX-grgWu4cwOGY7zKvnhm8Ro" />
+      </head>
       <body className={inter.className}>
         <Header />
         {children}

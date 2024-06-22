@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import sitemap from "./sitemap";
 const https: string = "https://my-app-posts.vercel.app/";
 
 export default function robots(): MetadataRoute.Robots {
@@ -7,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
+        allow: "/posts/",
       },
     ],
     sitemap: `${https}/sitemap.xml`,
